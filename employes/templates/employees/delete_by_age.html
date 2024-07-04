@@ -1,0 +1,8 @@
+<h1>Delete Employee by Age</h1>
+<form method="post">
+    {% csrf_token %}
+    <label for="age">Age:</label>
+    <input type="number" name="age" id="age">
+    <button type="submit">Delete</button>
+</form>
+<a href="{% url 'list_employees' %}">Back to list</a>
